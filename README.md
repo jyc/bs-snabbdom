@@ -105,5 +105,5 @@ let view title =
 let patch = init [|module_style|]
 
 (* Patch a dom element with id "#app" to the new virtual dom node *)
-let () = patch (VNode.from_dom_id "app") (view "Snabbdom")
+let () = patch (Snabbdom_vnode.from_dom_id "app") (view "Snabbdom")
 ```
